@@ -1,93 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RecipeNest | Chicken Biryani</title>
-
-    <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
+<header class="navbar">
+    <a href="index.html" class="logo">🍴 RecipeNest</a>
 
-    <nav class="navbar">
-
-        <div class="logo">🍴 RecipeNest</div>
-
-        <ul class="nav-links">
-
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-
-            <li>
-                <a href="recipes.html">Recipes</a>
-            </li>
-
-            <li>
-                <a href="categories.html">Categories</a>
-            </li>
-
-            <li>
-                <a href="about.html">About</a>
-            </li>
-
-            <li>
-                <a href="contact.html">Contact</a>
-            </li>
-
-        </ul>
-
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="recipes.html">Recipes</a>
+        <a href="categories.html">Categories</a>
+        <a href="recipe-details.html" class="active">Popular</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
     </nav>
-
 </header>
 
 
-<section class="recipe-detail">
+<main>
 
-    <<div class="detail-emoji">
-    🍛
-</div>
+<section class="detail-hero">
 
+    <div class="detail-food">
+        🍛
+    </div>
 
-    <div class="detail-content">
+    <div class="detail-intro">
 
-        <span>🍛 Indian Cuisine</span>
+        <span class="hero-badge">🔥 POPULAR RECIPE</span>
 
         <h1>Chicken Biryani</h1>
 
         <p>
-            A flavorful and aromatic rice dish made with
-            tender chicken, fragrant spices and basmati rice.
+            A delicious aromatic rice dish layered with
+            juicy chicken, herbs and traditional spices.
         </p>
 
-
-        <div class="recipe-info">
+        <div class="recipe-meta">
 
             <div>
-                ⏱️
-                <strong>45 min</strong>
-                <small>Cooking Time</small>
+                <strong>⏱️</strong>
+                <span>45 min</span>
             </div>
 
             <div>
-                👨‍🍳
-                <strong>Medium</strong>
-                <small>Difficulty</small>
+                <strong>👨‍🍳</strong>
+                <span>Medium</span>
             </div>
 
             <div>
-                🍽️
-                <strong>4</strong>
-                <small>Servings</small>
+                <strong>🍽️</strong>
+                <span>4 Servings</span>
             </div>
 
         </div>
@@ -97,132 +66,90 @@
 </section>
 
 
-<section class="ingredients">
+<section class="detail-section">
 
-    <h2>Ingredients</h2>
+    <div class="ingredients">
 
-    <ul>
+        <span class="small-title">🛒 WHAT YOU NEED</span>
 
-        <li>2 cups basmati rice</li>
+        <h2>Ingredients</h2>
 
-        <li>500g chicken</li>
-
-        <li>2 onions</li>
-
-        <li>2 tomatoes</li>
-
-        <li>1 cup yogurt</li>
-
-        <li>2 tbsp ginger garlic paste</li>
-
-        <li>1 tsp turmeric</li>
-
-        <li>2 tsp chili powder</li>
-
-        <li>Biryani masala</li>
-
-        <li>Fresh coriander and mint</li>
-
-        <li>Salt according to taste</li>
-
-        <li>Cooking oil</li>
-
-    </ul>
-
-</section>
-
-
-<section class="steps">
-
-    <h2>Cooking Steps</h2>
-
-    <div class="step">
-
-        <span>01</span>
-
-        <div>
-
-            <h3>Prepare the Chicken</h3>
-
-            <p>
-                Mix chicken with yogurt, spices,
-                ginger garlic paste and salt.
-                Let it marinate for 20 minutes.
-            </p>
-
-        </div>
+        <ul>
+            <li>2 cups basmati rice</li>
+            <li>500g chicken</li>
+            <li>2 onions</li>
+            <li>2 tomatoes</li>
+            <li>1 cup yogurt</li>
+            <li>Ginger garlic paste</li>
+            <li>2 tablespoons biryani masala</li>
+            <li>Fresh coriander</li>
+            <li>Fresh mint</li>
+            <li>Salt to taste</li>
+            <li>Cooking oil</li>
+        </ul>
 
     </div>
 
 
-    <div class="step">
+    <div class="steps">
 
-        <span>02</span>
+        <span class="small-title">👩‍🍳 LET'S COOK</span>
 
-        <div>
+        <h2>Cooking Steps</h2>
 
-            <h3>Cook the Rice</h3>
-
-            <p>
-                Boil basmati rice with salt and
-                whole spices until it is about 70% cooked.
-            </p>
-
+        <div class="step">
+            <span>01</span>
+            <div>
+                <h3>Prepare the Rice</h3>
+                <p>
+                    Wash the basmati rice and cook it until
+                    it is about 70% done. Drain and keep aside.
+                </p>
+            </div>
         </div>
 
-    </div>
-
-
-    <div class="step">
-
-        <span>03</span>
-
-        <div>
-
-            <h3>Cook the Chicken</h3>
-
-            <p>
-                Heat oil and cook onions until golden.
-                Add marinated chicken and cook well.
-            </p>
-
+        <div class="step">
+            <span>02</span>
+            <div>
+                <h3>Prepare the Chicken</h3>
+                <p>
+                    Marinate chicken with yogurt, spices,
+                    ginger garlic paste and salt.
+                </p>
+            </div>
         </div>
 
-    </div>
-
-
-    <div class="step">
-
-        <span>04</span>
-
-        <div>
-
-            <h3>Layer the Biryani</h3>
-
-            <p>
-                Add rice over the chicken.
-                Add mint and coriander.
-                Cover and cook on low flame.
-            </p>
-
+        <div class="step">
+            <span>03</span>
+            <div>
+                <h3>Cook the Masala</h3>
+                <p>
+                    Fry onions until golden. Add tomatoes,
+                    spices and marinated chicken.
+                </p>
+            </div>
         </div>
 
-    </div>
+        <div class="step">
+            <span>04</span>
+            <div>
+                <h3>Layer the Biryani</h3>
+                <p>
+                    Add cooked rice over the chicken.
+                    Top with mint, coriander and fried onions.
+                </p>
+            </div>
+        </div>
 
-
-    <div class="step">
-
-        <span>05</span>
-
-        <div>
-
-            <h3>Serve</h3>
-
-            <p>
-                Mix gently and serve hot with
-                raita or your favorite side dish.
-            </p>
-
+        <div class="step">
+            <span>05</span>
+            <div>
+                <h3>Cook and Serve</h3>
+                <p>
+                    Cover and cook on low heat for 15 minutes.
+                    Serve hot and enjoy!
+                </p>
+            </div>
         </div>
 
     </div>
@@ -230,13 +157,51 @@
 </section>
 
 
-<footer>
+<section class="tip-section">
 
-    <p>
-        © 2026 RecipeNest | Made with ❤️ for food lovers
+    <div>
+        <span>💡 CHEF'S TIP</span>
+        <h2>Let the flavors come together.</h2>
+        <p>
+            Give the biryani a few minutes to rest before serving.
+            This helps the flavors blend beautifully.
+        </p>
+    </div>
+
+    <div class="tip-icon">👩‍🍳</div>
+
+</section>
+
+</main>
+
+
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <div>
+            <h2>🍴 RecipeNest</h2>
+            <p>Cook. Create. Enjoy.</p>
+        </div>
+
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="recipes.html">Recipes</a>
+            <a href="categories.html">Categories</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+    </div>
+
+    <p class="copyright">
+        © 2026 RecipeNest | Made with ❤️ and delicious food.
     </p>
 
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
