@@ -1,72 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RecipeNest | Contact</title>
-
-    <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
+<header class="navbar">
+    <a href="index.html" class="logo">🍴 RecipeNest</a>
 
-    <nav class="navbar">
-
-        <div class="logo">
-            🍴 RecipeNest
-        </div>
-
-        <ul class="nav-links">
-
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-
-            <li>
-                <a href="recipes.html">Recipes</a>
-            </li>
-
-            <li>
-                <a href="categories.html">
-                    Categories
-                </a>
-            </li>
-
-            <li>
-                <a href="about.html">
-                    About
-                </a>
-            </li>
-
-            <li>
-                <a href="contact.html"
-                   class="active">
-                    Contact
-                </a>
-            </li>
-
-        </ul>
-
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="recipes.html">Recipes</a>
+        <a href="categories.html">Categories</a>
+        <a href="recipe-details.html">Popular</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
     </nav>
-
 </header>
 
 
-<section class="page-header">
+<main>
 
-    <h1>Contact Us</h1>
+<section class="page-hero">
 
-    <p>
-        We'd love to hear from you
-    </p>
+    <div class="hero-content">
+
+        <span class="hero-badge">💌 GET IN TOUCH</span>
+
+        <h1>
+            Let's Talk<br>
+            <em>Food.</em>
+        </h1>
+
+        <p>
+            Have a recipe idea, suggestion or simply want
+            to say hello? We'd love to hear from you.
+        </p>
+
+    </div>
 
 </section>
 
@@ -75,83 +50,125 @@
 
     <div class="contact-info">
 
-        <h2>Let's Talk Food!</h2>
+        <span class="small-title">📮 CONTACT US</span>
+
+        <h2>
+            We'd Love<br>
+            <em>To Hear From You</em>
+        </h2>
 
         <p>
-            Have a recipe suggestion, question
-            or feedback? Send us a message.
+            Send us a message and become part of the
+            RecipeNest food-loving community.
         </p>
 
-        <div class="contact-item">
-            📧
-            <span>
-                hello@recipenest.com
-            </span>
-        </div>
 
         <div class="contact-item">
-            📍
-            <span>
-                Chennai, Tamil Nadu
-            </span>
+            <div>📧</div>
+            <div>
+                <strong>Email</strong>
+                <span>hello@recipenest.com</span>
+            </div>
         </div>
 
+
         <div class="contact-item">
-            📞
-            <span>
-                +91 98765 43210
-            </span>
+            <div>📍</div>
+            <div>
+                <strong>Location</strong>
+                <span>RecipeNest Kitchen</span>
+            </div>
+        </div>
+
+
+        <div class="contact-item">
+            <div>⏰</div>
+            <div>
+                <strong>Available</strong>
+                <span>Monday - Friday</span>
+            </div>
         </div>
 
     </div>
 
 
-    <form class="contact-form"
-          onsubmit="sendMessage(event)">
+    <div class="contact-form">
 
-        <input
-            type="text"
-            placeholder="Your Name"
-            required
-        >
+        <h2>Send a Message 💌</h2>
 
-        <input
-            type="email"
-            placeholder="Your Email"
-            required
-        >
+        <form id="contactForm">
 
-        <input
-            type="text"
-            placeholder="Subject"
-            required
-        >
+            <label>Your Name</label>
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+                required
+            >
 
-        <textarea
-            rows="6"
-            placeholder="Write your message..."
-            required>
-        </textarea>
+            <label>Email Address</label>
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+            >
 
-        <button type="submit">
-            Send Message
-        </button>
+            <label>Subject</label>
+            <input
+                type="text"
+                placeholder="What would you like to tell us?"
+                required
+            >
 
-    </form>
+            <label>Your Message</label>
+            <textarea
+                id="message"
+                rows="6"
+                placeholder="Write your message..."
+                required
+            ></textarea>
+
+            <button type="submit" class="btn primary">
+                Send Message 💌
+            </button>
+
+        </form>
+
+    </div>
 
 </section>
 
+</main>
 
-<footer>
 
-    <p>
-        © 2026 RecipeNest | Made with ❤️ for food lovers
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <div>
+            <h2>🍴 RecipeNest</h2>
+            <p>Cook. Create. Enjoy.</p>
+        </div>
+
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="recipes.html">Recipes</a>
+            <a href="categories.html">Categories</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+    </div>
+
+    <p class="copyright">
+        © 2026 RecipeNest | Made with ❤️ and delicious food.
     </p>
 
 </footer>
 
-
-<script src="css/js/script.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
