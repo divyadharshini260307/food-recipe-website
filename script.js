@@ -1,63 +1,41 @@
-// Newsletter
+document.addEventListener("DOMContentLoaded", function () {
 
-function subscribeUser(event) {
+    // Smooth page entrance
+    document.body.classList.add("loaded");
 
-    event.preventDefault();
 
-    const email =
-        document.getElementById("email").value;
+    // Contact form
+    const contactForm = document.getElementById("contactForm");
 
-    alert(
-        "Thank you for subscribing! 🍴\n" +
-        "Recipes will be sent to " + email
+    if (contactForm) {
+
+        contactForm.addEventListener("submit", function (event) {
+
+            event.preventDefault();
+
+            const name = document.getElementById("name").value;
+
+            alert(
+                "Thank you, " +
+                name +
+                "! 🍴 Your message has been received by RecipeNest."
+            );
+
+            contactForm.reset();
+
+        });
+    }
+
+
+    // Recipe card animation
+    const cards = document.querySelectorAll(
+        ".recipe-card, .feature-card, .category-card"
     );
 
-    document.getElementById("email").value = "";
-}
+    cards.forEach(function (card, index) {
 
-
-// Contact Form
-
-function sendMessage(event) {
-
-    event.preventDefault();
-
-    alert(
-        "Thank you for contacting RecipeNest! ❤️\n" +
-        "We will get back to you soon."
-    );
-
-    event.target.reset();
-}
-
-
-// Recipe Search
-
-function searchRecipes() {
-
-    const input =
-        document
-        .getElementById("searchInput")
-        .value
-        .toLowerCase();
-
-    const recipes =
-        document.querySelectorAll(".recipe-item");
-
-    recipes.forEach(function(recipe) {
-
-        const text =
-            recipe.textContent.toLowerCase();
-
-        if (text.includes(input)) {
-
-            recipe.style.display = "block";
-
-        } else {
-
-            recipe.style.display = "none";
-
-        }
+        card.style.animationDelay = (index * 0.08) + "s";
 
     });
-}
+
+});
