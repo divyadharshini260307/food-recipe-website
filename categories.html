@@ -1,207 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RecipeNest | Categories</title>
-
-    <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
+<header class="navbar">
+    <a href="index.html" class="logo">🍴 RecipeNest</a>
 
-    <nav class="navbar">
-
-        <div class="logo">
-            🍴 RecipeNest
-        </div>
-
-        <ul class="nav-links">
-
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-
-            <li>
-                <a href="recipes.html">Recipes</a>
-            </li>
-
-            <li>
-                <a href="categories.html"
-                   class="active">
-                    Categories
-                </a>
-            </li>
-
-            <li>
-                <a href="about.html">About</a>
-            </li>
-
-            <li>
-                <a href="contact.html">Contact</a>
-            </li>
-
-        </ul>
-
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="recipes.html">Recipes</a>
+        <a href="categories.html" class="active">Categories</a>
+        <a href="recipe-details.html">Popular</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
     </nav>
-
 </header>
 
 
-<section class="page-header">
+<main>
 
-    <h1>Recipe Categories</h1>
+<section class="page-hero">
 
-    <p>
-        Explore recipes based on your cravings
-    </p>
+    <div class="hero-content">
 
-</section>
+        <span class="hero-badge">🌎 EXPLORE FLAVORS</span>
 
+        <h1>
+            Choose Your<br>
+            <em>Favorite Cuisine.</em>
+        </h1>
 
-<section class="section">
-
-    <div class="category-grid">
-
-        <div class="category-card">
-
-            <div class="category-icon">
-                🍳
-            </div>
-
-            <h2>Breakfast</h2>
-
-            <p>
-                Start your day with delicious
-                and healthy breakfast recipes.
-            </p>
-
-            <a href="recipes.html">
-                Explore →
-            </a>
-
-        </div>
-
-
-        <div class="category-card">
-
-            <div class="category-icon">
-                🍛
-            </div>
-
-            <h2>Lunch</h2>
-
-            <p>
-                Delicious meals perfect for
-                your afternoon.
-            </p>
-
-            <a href="recipes.html">
-                Explore →
-            </a>
-
-        </div>
-
-
-        <div class="category-card">
-
-            <div class="category-icon">
-                🍝
-            </div>
-
-            <h2>Dinner</h2>
-
-            <p>
-                Comforting dinner recipes
-                for the whole family.
-            </p>
-
-            <a href="recipes.html">
-                Explore →
-            </a>
-
-        </div>
-
-
-        <div class="category-card">
-
-            <div class="category-icon">
-                🍰
-            </div>
-
-            <h2>Desserts</h2>
-
-            <p>
-                Sweet treats for every
-                special occasion.
-            </p>
-
-            <a href="recipes.html">
-                Explore →
-            </a>
-
-        </div>
-
-
-        <div class="category-card">
-
-            <div class="category-icon">
-                🥗
-            </div>
-
-            <h2>Healthy</h2>
-
-            <p>
-                Nutritious and healthy
-                recipes for a better lifestyle.
-            </p>
-
-            <a href="recipes.html">
-                Explore →
-            </a>
-
-        </div>
-
-
-        <div class="category-card">
-
-            <div class="category-icon">
-                🍕
-            </div>
-
-            <h2>Fast Food</h2>
-
-            <p>
-                Quick and tasty recipes
-                for busy days.
-            </p>
-
-            <a href="recipes.html">
-                Explore →
-            </a>
-
-        </div>
+        <p>
+            Explore recipes from different cuisines,
+            meal types and delicious food categories.
+        </p>
 
     </div>
 
 </section>
 
 
-<footer>
+<section class="categories-section">
 
-    <p>
-        © 2026 RecipeNest | Made with ❤️ for food lovers
+    <div class="section-heading">
+        <span>🍽️ FOOD CATEGORIES</span>
+        <h2>Something for Every Craving</h2>
+        <p>
+            Pick a category and discover your next delicious meal.
+        </p>
+    </div>
+
+
+    <div class="category-grid">
+
+        <a href="recipes.html" class="category-card">
+            <div>🍛</div>
+            <h3>Indian</h3>
+            <p>Spicy & aromatic</p>
+        </a>
+
+        <a href="recipes.html" class="category-card">
+            <div>🍕</div>
+            <h3>Italian</h3>
+            <p>Cheesy & comforting</p>
+        </a>
+
+        <a href="recipes.html" class="category-card">
+            <div>🍜</div>
+            <h3>Asian</h3>
+            <p>Fresh & flavorful</p>
+        </a>
+
+        <a href="recipes.html" class="category-card">
+            <div>🌮</div>
+            <h3>Mexican</h3>
+            <p>Bold & exciting</p>
+        </a>
+
+        <a href="recipes.html" class="category-card">
+            <div>🥗</div>
+            <h3>Healthy</h3>
+            <p>Fresh & nutritious</p>
+        </a>
+
+        <a href="recipes.html" class="category-card">
+            <div>🍰</div>
+            <h3>Desserts</h3>
+            <p>Sweet & delicious</p>
+        </a>
+
+        <a href="recipes.html" class="category-card">
+            <div>🥞</div>
+            <h3>Breakfast</h3>
+            <p>Start your day</p>
+        </a>
+
+        <a href="recipes.html" class="category-card">
+            <div>🍲</div>
+            <h3>Comfort Food</h3>
+            <p>Warm & cozy</p>
+        </a>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <div>
+            <h2>🍴 RecipeNest</h2>
+            <p>Cook. Create. Enjoy.</p>
+        </div>
+
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="recipes.html">Recipes</a>
+            <a href="categories.html">Categories</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+    </div>
+
+    <p class="copyright">
+        © 2026 RecipeNest | Made with ❤️ and delicious food.
     </p>
 
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
